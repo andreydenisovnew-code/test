@@ -113,7 +113,10 @@ app.get("/api/mails", async (req, res) => {
 });
 
 // 🚀 Запускаем сервер
-const PORT = 4000;
+// 🚀 Запускаем сервер
+const PORT = process.env.PORT || 4000; // Render даст свой порт, локально останется 4000
 app.listen(PORT, () => {
   console.log(`✅ Server running at http://localhost:${PORT}`);
+});
+
 });
