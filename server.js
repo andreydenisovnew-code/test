@@ -118,5 +118,3 @@ const PORT = process.env.PORT || 4000; // Render даст свой порт, л�
 app.listen(PORT, () => {
   console.log(`✅ Server running at http://localhost:${PORT}`);
 });
-
-});
