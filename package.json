@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+  "postinstall": "npm rebuild sqlite3 --build-from-source",
   "dev": "vite",
   "build": "vite build",
   "preview": "vite preview",
